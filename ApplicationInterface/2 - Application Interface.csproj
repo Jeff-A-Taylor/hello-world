@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35A7DB31-3476-4943-8495-3E5A4C2BDE9D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApplicationInterface</RootNamespace>
+    <AssemblyName>ApplicationInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountCustomerNumberService.cs" />
+    <Compile Include="AccountFinancialInfoService.cs" />
+    <Compile Include="AccountService.cs" />
+    <Compile Include="AddressService.cs" />
+    <Compile Include="AttachmentService.cs" />
+    <Compile Include="BidPackageService.cs" />
+    <Compile Include="BidService.cs" />
+    <Compile Include="BuildingService.cs" />
+    <Compile Include="ChargeService.cs" />
+    <Compile Include="CommodityTypeService.cs" />
+    <Compile Include="CompanyBidderService.cs" />
+    <Compile Include="CompanyBlockAndIndexPriceToCompareAdderService.cs" />
+    <Compile Include="CompanyService.cs" />
+    <Compile Include="CompanyServiceTypesService.cs" />
+    <Compile Include="ContractService.cs" />
+    <Compile Include="ConversionFactorService.cs" />
+    <Compile Include="CostBudgetService.cs" />
+    <Compile Include="CostItemToMeteredItemService.cs" />
+    <Compile Include="DistributionChargeService.cs" />
+    <Compile Include="ElectricBlockSelectionService.cs" />
+    <Compile Include="ElectricityBillService.cs" />
+    <Compile Include="ERMAAnnouncementsService.cs" />
+    <Compile Include="EstimatedLoadToDropService.cs" />
+    <Compile Include="FacilityLocationService.cs" />
+    <Compile Include="FacilityService.cs" />
+    <Compile Include="IntervalHistoryService.cs" />
+    <Compile Include="LocationService.cs" />
+    <Compile Include="MeterService.cs" />
+    <Compile Include="NaturalGasBillService.cs" />
+    <Compile Include="NaturalGasBudgetService.cs" />
+    <Compile Include="NetworkIntegrationTransmissionService.cs" />
+    <Compile Include="NominationService.cs" />
+    <Compile Include="PeakLoadContributionService.cs" />
+    <Compile Include="PeakShavingNotificationsService.cs" />
+    <Compile Include="PersonService.cs" />
+    <Compile Include="PlaceSystemPermissionService.cs" />
+    <Compile Include="PriceEscalationService.cs" />
+    <Compile Include="PriceLockService.cs" />
+    <Compile Include="PriceToCompareService.cs" />
+    <Compile Include="PricingPointService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateClassService.cs" />
+    <Compile Include="RFQService.cs" />
+    <Compile Include="SchedulingService.cs" />
+    <Compile Include="SecurityRequestInformationPersistence.cs" />
+    <Compile Include="SecurityService.cs" />
+    <Compile Include="TariffLossFactorService.cs" />
+    <Compile Include="TariffService.cs" />
+    <Compile Include="UnforcedCapacityService.cs" />
+    <Compile Include="UnitService.cs" />
+    <Compile Include="UtilityBillService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERMABusinessLibrary\ERMABusinessLibrary.csproj">
+      <Project>{ad79e236-311a-456b-864c-bb31e96e36b7}</Project>
+      <Name>ERMABusinessLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

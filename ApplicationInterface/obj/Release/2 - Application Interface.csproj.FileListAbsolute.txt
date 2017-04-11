@@ -1,0 +1,10 @@
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\ApplicationInterface.dll
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\ApplicationInterface.pdb
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\ERMABusinessLibrary.dll
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\EPPlus.dll
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\Excel.dll
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\ICSharpCode.SharpZipLib.dll
+C:\ERMA_TRUNK\ApplicationInterface\bin\Release\ERMABusinessLibrary.pdb
+C:\ERMA_TRUNK\ApplicationInterface\obj\Release\2 - Application Interface.csprojResolveAssemblyReference.cache
+C:\ERMA_TRUNK\ApplicationInterface\obj\Release\ApplicationInterface.dll
+C:\ERMA_TRUNK\ApplicationInterface\obj\Release\ApplicationInterface.pdb
